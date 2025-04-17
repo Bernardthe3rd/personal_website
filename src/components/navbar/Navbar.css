@@ -1,0 +1,10 @@
+.nav__big {
+    border: 5px dashed purple;
+    background-color: var(--background-clr-first);
+    height: 125px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
