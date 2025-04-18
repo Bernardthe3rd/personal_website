@@ -10,9 +10,13 @@ function App() {
     <>
       <Navbar/>
       <Element name="home" className="container">
-          <h1>Benjamin Meijer</h1>
-          <h2>Developer - Adventurer - IT help</h2>
-          <CaretCircleDown size={64} />
+          <div className="element__home">
+              <div className="element__home--title">
+                  <h1>BENJAMIN MEIJER</h1>
+                  <h2>Developer - Adventurer - IT help</h2>
+              </div>
+              <CaretCircleDown size={64} color="#84C318" />
+          </div>
       </Element>
       <Element name="about" className="container">
           <img src={myself} alt="myself" />

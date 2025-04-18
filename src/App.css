@@ -4,3 +4,31 @@
   padding-inline: 2rem;
   border: 2px solid black;
 }
+
+.background__img {
+  background-image: url("src/assets/home-background-img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.element__home {
+  border: 2px dashed mediumpurple;
+  height: 100vh;
+  background-image: url("src/assets/home-background-img.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 75px;
+}
+
+.element__home--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
