@@ -64,12 +64,15 @@ function App() {
           </div>
       </Element>
       <Element name="contact" className="container">
-          <form onSubmit={(e) => e.preventDefault()}>
-              <input type="text" name="name" id="field-name" placeholder="Name" />
-              <input type="email" name="email" id="field-email" placeholder="Email" />
-              <textarea name="message" id="field-message" cols="50" rows="10" placeholder="Message" />
-              <button type="submit">Send</button>
-          </form>
+          <div className="element__contact">
+              <h2>GET IN TOUCH</h2>
+              <form className="element__contact--form" onSubmit={(e) => e.preventDefault()}>
+                  <input type="text" name="name" id="field-name" placeholder="NAME" />
+                  <input type="email" name="email" id="field-email" placeholder="EMAIL" />
+                  <textarea name="message" id="field-message" cols="50" rows="10" placeholder="MESSAGE" />
+                  <button type="submit">SEND</button>
+              </form>
+          </div>
       </Element>
       <footer className="container">
           <p>copyright</p>

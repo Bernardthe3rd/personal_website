@@ -22,7 +22,8 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 24px;
-  background-color: whitesmoke;
+  color: var(--text-clr);
+  background-color: var(--background-clr-first);
 }
 
 ul {
@@ -36,7 +37,7 @@ img {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline 1px;
   color: var(--text-clr);
   cursor: pointer;
   transition: color 0.3s ease;
