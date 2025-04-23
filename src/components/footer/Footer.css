@@ -1,5 +1,4 @@
 .footer {
-    border: 2px dashed red;
     background-color: var(--background-clr-first);
     padding: 2rem 2rem;
 
@@ -11,7 +10,6 @@
 }
 
 .footer__article {
-    border: 2px dashed green;
     border-radius: 20px;
     background-color: var(--background-clr-second);
     width: 100%;

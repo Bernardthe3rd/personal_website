@@ -1,5 +1,4 @@
 .element__about {
-    border: 2px dashed green;
     background-color: var(--background-clr-first);
     min-height: 100dvh;
     padding: 2rem 0;
@@ -14,13 +13,11 @@
     width: 500px;
     aspect-ratio: 5/7;
     overflow: hidden;
-    border: 2px solid black;
     border-radius: 20px;
     margin-inline: 25px;
 }
 
 .element__about--text {
-    border: 2px dashed red;
     border-radius: 20px;
     background-color: var(--background-clr-third);
     height: 100%;

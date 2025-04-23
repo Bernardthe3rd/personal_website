@@ -1,5 +1,4 @@
 .nav__big {
-    border: 5px dashed purple;
     position: fixed;
     left: 0;
     top: 0;
@@ -7,6 +6,7 @@
     height: 100vh;
     width: 150px;
     background-color: var(--background-clr-first);
+    border-right: 5px solid var(--text-clr);
 
     display: flex;
     flex-direction: column;

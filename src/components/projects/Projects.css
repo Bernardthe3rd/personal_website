@@ -1,5 +1,4 @@
 .element__projects {
-    border: 2px dashed blue;
     background-color: var(--background-clr-first);
     min-height: 100dvh;
     padding-inline: 2rem;
@@ -11,7 +10,6 @@
 }
 
 .element__projects--article {
-    border: 2px dashed purple;
     border-radius: 20px;
     background-color: var(--background-clr-second);
     width: 100%;
