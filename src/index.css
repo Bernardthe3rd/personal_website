@@ -21,7 +21,7 @@ body {
   font-weight: 900;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 24px;
+  font-size: 16px;
   color: var(--text-clr);
   background-color: var(--background-clr-first);
 }
@@ -59,7 +59,7 @@ h1 {
 h2 {
   font-family: var(--font-first);
   font-weight: 400;
-  font-style: normal;
+  text-decoration: underline;
   font-size: 48px;
   line-height: 1.2em;
 }
@@ -75,7 +75,7 @@ h3 {
 h4, h5, h6 {
   font-family: var(--font-first);
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   font-size: 24px;
   line-height: 1.2em;
 }

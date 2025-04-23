@@ -2,7 +2,7 @@ import './App.css'
 import myself from "./assets/about-myself-img.jpeg"
 import Navbar from "./components/navbar/Navbar.jsx"
 import { Element, Link } from 'react-scroll'
-import { CaretCircleDown } from "@phosphor-icons/react";
+import {CaretCircleDown, EnvelopeSimple, GithubLogo, LinkedinLogo, LinuxLogo} from "@phosphor-icons/react";
 
 function App() {
 
@@ -75,7 +75,24 @@ function App() {
           </div>
       </Element>
       <footer className="container">
-          <p>copyright</p>
+          <div className="footer">
+              <article className="footer__article">
+                  <h4>Stay connected?</h4>
+                  <a href="https://www.linkedin.com/in/benjamin-meijer" target="_blank">
+                      <LinkedinLogo size={32} />
+                  </a>
+                  <a href="https://github.com/Bernardthe3rd" target="_blank">
+                      <GithubLogo size={32} />
+                  </a>
+                  <a href="mailto:bernardmeijer@icloud.com">
+                      <EnvelopeSimple size={32} />
+                  </a>
+                  <Link to="home" smooth={true} duration={500}>
+                      <LinuxLogo size={32} />
+                  </Link>
+              </article>
+              <p>© 2025 Benjamin Meijer. All rights reserved.</p>
+          </div>
       </footer>
     </>
   )
