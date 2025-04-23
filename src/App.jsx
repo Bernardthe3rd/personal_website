@@ -22,7 +22,7 @@ function App() {
       </Element>
       <Element name="about" className="container">
           <div className="element__about">
-              <span className="img-wrapper">
+              <span className="img-wrapper__about">
                   <img src={myself} alt="myself" />
               </span>
               <article className="element__about--text">
@@ -44,20 +44,24 @@ function App() {
           </div>
       </Element>
       <Element name="projects" className="container">
-          <article>
-              <span>
-                  <img src={myself} alt="img of first project" />
-              </span>
-              <p>informatie over het project</p>
-              <a href="https://github.com" target="_blank" >github link</a>
-          </article>
-          <article>
-              <span>
-                  <img src={myself} alt="img of first project" />
-              </span>
-              <p>informatie over het project</p>
-              <a href="https://github.com" target="_blank" >github link</a>
-          </article>
+          <div className="element__projects">
+              <article className="element__projects--article">
+                <span className="img-wrapper__projects">
+                    <img src={myself} alt="img of first project" />
+                </span>
+                    <p>
+                        informatie over het project <a href="https://github.com" target="_blank" >github link</a>
+                    </p>
+              </article>
+              <article className="element__projects--article">
+                <span className="img-wrapper__projects">
+                    <img src={myself} alt="img of first project" />
+                </span>
+                    <p>
+                        informatie over het project <a href="https://github.com" target="_blank" >github link</a>
+                    </p>
+              </article>
+          </div>
       </Element>
       <Element name="contact" className="container">
           <form onSubmit={(e) => e.preventDefault()}>
