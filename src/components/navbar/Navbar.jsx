@@ -19,7 +19,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="container">
+        <nav>
             <ul className="nav__big">
                 <Link to="home" smooth={true} duration={500}>Home</Link>
                 <Link to="about" smooth={true} duration={500}>About</Link>

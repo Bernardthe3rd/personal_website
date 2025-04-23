@@ -2,13 +2,18 @@ import './App.css'
 import myself from "./assets/about-myself-img.jpeg"
 import Navbar from "./components/navbar/Navbar.jsx"
 import { Element, Link } from 'react-scroll'
-import {CaretCircleDown, EnvelopeSimple, GithubLogo, LinkedinLogo, LinuxLogo} from "@phosphor-icons/react";
+import {
+    ArrowBendRightDown, ArrowBendRightUp,
+    EnvelopeSimple,
+    GithubLogo,
+    LinkedinLogo
+} from "@phosphor-icons/react";
 
 function App() {
 
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Element name="home" className="container">
           <div className="element__home">
               <div className="element__home--title">
@@ -16,7 +21,7 @@ function App() {
                   <h2>Developer - Adventurer - IT help</h2>
               </div>
               <Link to="about" smooth={true} duration={500}>
-                  <CaretCircleDown size={64} color="#84C318" />
+                  <ArrowBendRightDown size={64} />
               </Link>
           </div>
       </Element>
@@ -88,7 +93,7 @@ function App() {
                       <EnvelopeSimple size={32} />
                   </a>
                   <Link to="home" smooth={true} duration={500}>
-                      <LinuxLogo size={32} />
+                      <ArrowBendRightUp size={32} />
                   </Link>
               </article>
               <p>© 2025 Benjamin Meijer. All rights reserved.</p>
