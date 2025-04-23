@@ -21,12 +21,30 @@ body {
   font-weight: 900;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 24px;
-  background-color: whitesmoke;
+  font-size: 16px;
+  color: var(--text-clr);
+  background-color: var(--background-clr-first);
 }
 
 ul {
   list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: underline 1px;
+  color: var(--text-clr);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--detail-clr);
 }
 
 /*///////////////Typography/////////////////*/
@@ -41,10 +59,9 @@ h1 {
 h2 {
   font-family: var(--font-first);
   font-weight: 400;
-  font-style: normal;
+  text-decoration: underline;
   font-size: 48px;
   line-height: 1.2em;
-  text-align: center;
 }
 
 h3 {
@@ -58,7 +75,7 @@ h3 {
 h4, h5, h6 {
   font-family: var(--font-first);
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   font-size: 24px;
   line-height: 1.2em;
 }
