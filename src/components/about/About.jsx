@@ -22,7 +22,7 @@ const About = () => {
                         <br/><br/>
                         In mijn vrije tijd ben ik vaak achter mijn laptop te vinden, maar ook buiten te spotten tijdens het hardlopen of onderweg naar een nieuwe reisbestemming. Ik ben ervan overtuigd dat een brede blik en nieuwsgierigheid je als developer verder brengen — en die mindset neem ik mee in alles wat ik doe.
                         <br/><br/>
-                        Nieuwsgierig naar mijn werk of wil je gewoon eens kennismaken? Stuur gerust <Link to="contact" smooth={true} duration={500}> een berichtje </Link> of neem een kijkje op <a href="https://github.com/Bernardthe3rd" target="_blank"> mijn GitHub!</a>
+                        Nieuwsgierig naar mijn werk of wil je gewoon eens kennismaken? Stuur gerust <Link to="contact" smooth={true} duration={500}>een berichtje</Link> of neem een kijkje op <a href="https://github.com/Bernardthe3rd" target="_blank"> mijn GitHub!</a>
                     </p>
                 </article>
             </div>
