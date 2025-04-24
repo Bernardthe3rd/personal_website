@@ -8,7 +8,7 @@ import Project from "./Project.jsx";
 
 const Projects = () => {
 
-    const [projects, toggleProjects] = useState(false)
+    const [projects, toggleProjects] = useState(true)
 
     const handleProjects = () => {
         toggleProjects(!projects)
@@ -18,11 +18,11 @@ const Projects = () => {
         projects
             ?
             <Element name="projects" className="container">
-                <div className="element__projects-alt">
+                <div className="element__projects-container-alt">
                     <h2>PROJECTS</h2>
                     <p>Sorry no projects yet! But please let me know if you have some inspiration</p>
                     <Link to="contact" smooth={true} duration={500}>
-                        <ArrowBendRightDown size={64} />
+                        <ArrowBendRightDown size={48} />
                     </Link>
                 </div>
             </Element>
@@ -30,27 +30,29 @@ const Projects = () => {
             <Element name="projects" className="container">
                 <div className="element__projects">
                     <h2>PROJECTS</h2>
-                    <Project
-                        image={myself}
-                        alt="img of first project"
-                        text="Dit project heb ik gedaan tijdens mijn opleiding bij hogeschool Novi en heeft de focus op front-end"
-                        link="https://github.com"
-                        linktext="github link"
-                    />
-                    <Project
-                        image={myself}
-                        alt="img of first project"
-                        text="Dit project heb ik gedaan tijdens mijn opleiding bij hogeschool Novi en heeft de focus op back-end"
-                        link="https://github.com"
-                        linktext="github link"
-                    />
-                    <Project
-                        image={myself}
-                        alt="img of first project"
-                        text="Dit project gaat over deze persoonlijke website"
-                        link="https://github.com"
-                        linktext="github link"
-                    />
+                    <div className="element__projects-container">
+                        <Project
+                            image={myself}
+                            alt="img of first project"
+                            text="Dit project heb ik gedaan tijdens mijn opleiding bij hogeschool Novi en heeft de focus op front-end"
+                            link="https://github.com"
+                            linktext="github link"
+                        />
+                        <Project
+                            image={myself}
+                            alt="img of first project"
+                            text="Dit project heb ik gedaan tijdens mijn opleiding bij hogeschool Novi en heeft de focus op back-end"
+                            link="https://github.com"
+                            linktext="github link"
+                        />
+                        <Project
+                            image={myself}
+                            alt="img of first project"
+                            text="Dit project gaat over deze persoonlijke website"
+                            link="https://github.com"
+                            linktext="github link"
+                        />
+                    </div>
                 </div>
             </Element>
     );

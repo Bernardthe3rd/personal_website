@@ -3,8 +3,9 @@
     background-color: var(--background-clr-second);
     min-height: 100dvh;
     padding: 2rem 2rem;
-    margin-inline: auto;
+    margin: 2rem auto;
     max-width: 1250px;
+    width: calc(100% - 4rem);
 
     display: flex;
     flex-direction: column;

@@ -1,6 +1,17 @@
 .element__projects {
-    background-color: var(--background-clr-first);
+    border-block: 5px solid var(--text-clr);
+    padding: 2rem 0;
     min-height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.element__projects-container {
+    background-color: var(--background-clr-first);
     padding-inline: 2rem;
 
     display: flex;
@@ -12,10 +23,11 @@
     gap: 25px;
 }
 
-.element__projects-alt {
+.element__projects-container-alt {
+    border-block: 5px solid var(--text-clr);
     background-color: var(--background-clr-first);
-    min-height: 100dvh;
     padding-inline: 2rem;
+    min-height: 100dvh;
 
     display: flex;
     flex-direction: column;
