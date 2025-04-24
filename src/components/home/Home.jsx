@@ -12,7 +12,7 @@ const Home = () => {
                     <h2>Developer - Adventurer - IT help</h2>
                 </div>
                 <Link to="about" smooth={true} duration={500}>
-                    <ArrowBendRightDown size={64} />
+                    <ArrowBendRightDown size={48} />
                 </Link>
             </div>
         </Element>
