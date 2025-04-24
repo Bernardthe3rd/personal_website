@@ -1,4 +1,5 @@
 .footer {
+    border-top: 5px solid var(--text-clr);
     background-color: var(--background-clr-first);
     padding: 2rem 2rem;
 

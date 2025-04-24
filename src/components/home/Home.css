@@ -23,9 +23,18 @@
 }
 
 .element__home--title {
+    padding: 0 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .element__home--title {
+        padding: 0 2rem;
+    }
+
 }

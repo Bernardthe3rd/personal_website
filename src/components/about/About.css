@@ -25,3 +25,33 @@
     padding: 20px;
     margin-inline: 25px;
 }
+
+@media screen and (max-width: 992px) {
+    .element__about {
+        flex-direction: column;
+        margin-inline: 2rem;
+        row-gap: 2rem;
+    }
+
+    .img-wrapper__about {
+        width: 100%;
+    }
+
+    .element__about--text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .element__about {
+        margin-inline: 2rem;
+    }
+
+    .element__about--text {
+        width: 100%;
+    }
+
+    .img-wrapper__about {
+        width: 100%;
+    }
+}

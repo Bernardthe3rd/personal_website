@@ -79,3 +79,40 @@ h4, h5, h6 {
   font-size: 24px;
   line-height: 1.2em;
 }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4, h5, h6 {
+    font-size: 18px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4, h5, h6 {
+    font-size: 14px;
+  }
+}
