@@ -4,9 +4,12 @@
     padding-inline: 2rem;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
 }
 
 .element__projects-alt {
@@ -23,21 +26,24 @@
 .element__projects--article {
     border-radius: 20px;
     background-color: var(--background-clr-second);
-    width: 100%;
-    max-width: 1250px;
-    margin-block: 50px;
-    padding: 50px;
+    padding: 2rem 1rem;
+    max-width: 300px;
+    min-height: 500px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    row-gap: 20px;
 }
 
 .img-wrapper__projects {
-    width: 250px;
-    height: 200px;
+    width: 100%;
+    aspect-ratio: 5/4;
     overflow: hidden;
-    border: 2px solid black;
     border-radius: 20px;
+}
+
+.container h2 {
+    text-align: center;
 }

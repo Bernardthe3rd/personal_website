@@ -7,7 +7,7 @@ import {ArrowBendRightDown} from "@phosphor-icons/react";
 
 const Projects = () => {
 
-    const [projects, toggleProjects] = useState(true)
+    const [projects, toggleProjects] = useState(false)
 
     const handleProjects = () => {
         toggleProjects(!projects)
@@ -27,31 +27,28 @@ const Projects = () => {
             </Element>
             :
             <Element name="projects" className="container">
+                <h2>PROJECTS</h2>
                 <div className="element__projects">
-                    <h2>PROJECTS</h2>
                     <article className="element__projects--article">
                         <span className="img-wrapper__projects">
                             <img src={myself} alt="img of first project"/>
                         </span>
-                        <p>
-                            informatie over het project <a href="https://github.com" target="_blank">github link</a>
-                        </p>
+                        <p>Dit project heb ik gedaan tijdens mijn opleiding bij hogeschool Novi en heeft de focus op front-end</p>
+                        <a href="https://github.com" target="_blank">github link</a>
                     </article>
                     <article className="element__projects--article">
                         <span className="img-wrapper__projects">
                             <img src={myself} alt="img of first project"/>
                         </span>
-                        <p>
-                            informatie over het project <a href="https://github.com" target="_blank">github link</a>
-                        </p>
+                        <p>Dit project heb ik gedaan tijdens mijn opleiding bij hogeschool Novi en heeft de focus op back-end</p>
+                        <a href="https://github.com" target="_blank">github link</a>
                     </article>
                     <article className="element__projects--article">
                         <span className="img-wrapper__projects">
                             <img src={myself} alt="img of first project"/>
                         </span>
-                        <p>
-                            informatie over het project <a href="https://github.com" target="_blank">github link</a>
-                        </p>
+                        <p>Dit project gaat over deze persoonlijke website</p>
+                        <a href="https://github.com" target="_blank">github link</a>
                     </article>
                 </div>
             </Element>
