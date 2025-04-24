@@ -3,6 +3,7 @@ import myself from "../../assets/about-myself-img.jpeg";
 import {Element, Link} from "react-scroll";
 import {useState} from "react";
 import {ArrowBendRightDown} from "@phosphor-icons/react";
+import Project from "./Project.jsx";
 
 
 const Projects = () => {
@@ -27,29 +28,29 @@ const Projects = () => {
             </Element>
             :
             <Element name="projects" className="container">
-                <h2>PROJECTS</h2>
                 <div className="element__projects">
-                    <article className="element__projects--article">
-                        <span className="img-wrapper__projects">
-                            <img src={myself} alt="img of first project"/>
-                        </span>
-                        <p>Dit project heb ik gedaan tijdens mijn opleiding bij hogeschool Novi en heeft de focus op front-end</p>
-                        <a href="https://github.com" target="_blank">github link</a>
-                    </article>
-                    <article className="element__projects--article">
-                        <span className="img-wrapper__projects">
-                            <img src={myself} alt="img of first project"/>
-                        </span>
-                        <p>Dit project heb ik gedaan tijdens mijn opleiding bij hogeschool Novi en heeft de focus op back-end</p>
-                        <a href="https://github.com" target="_blank">github link</a>
-                    </article>
-                    <article className="element__projects--article">
-                        <span className="img-wrapper__projects">
-                            <img src={myself} alt="img of first project"/>
-                        </span>
-                        <p>Dit project gaat over deze persoonlijke website</p>
-                        <a href="https://github.com" target="_blank">github link</a>
-                    </article>
+                    <h2>PROJECTS</h2>
+                    <Project
+                        image={myself}
+                        alt="img of first project"
+                        text="Dit project heb ik gedaan tijdens mijn opleiding bij hogeschool Novi en heeft de focus op front-end"
+                        link="https://github.com"
+                        linktext="github link"
+                    />
+                    <Project
+                        image={myself}
+                        alt="img of first project"
+                        text="Dit project heb ik gedaan tijdens mijn opleiding bij hogeschool Novi en heeft de focus op back-end"
+                        link="https://github.com"
+                        linktext="github link"
+                    />
+                    <Project
+                        image={myself}
+                        alt="img of first project"
+                        text="Dit project gaat over deze persoonlijke website"
+                        link="https://github.com"
+                        linktext="github link"
+                    />
                 </div>
             </Element>
     );
