@@ -13,6 +13,9 @@ RUN npm install
 # Kopieer de rest van je project
 COPY . .
 
+# Format en lint code tijdens build
+RUN npm run format && npm run lint
+
 # Expose de Vite dev server poort
 EXPOSE 3000
 

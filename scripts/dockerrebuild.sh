@@ -19,12 +19,17 @@ if [ $? -ne 0 ]; then
 fi
 
 echo -e "${GREEN}🚀 Container starten op poort $PORT...${NC}"
-docker run -it -p $PORT:$PORT \
+docker run -d -p $PORT:$PORT \
   -v ${PWD}:/app \
   -v /app/node_modules \
+  --name personal-site-container \
   $IMAGE_NAME
 
-echo -e "${GREEN}🧽 Opruimen van dangling images...${NC}"
-docker image prune -f
+# Wacht kort zodat container init afmaakt
+sleep 3
+
+echo -e "${GREEN}🧽 Formatteren en linten binnen container...${NC}"
+docker exec -it personal-site-container npm run format
+docker exec -it personal-site-container npm run lint
 
 echo -e "${GREEN}✅ Rebuild succesvol afgerond!${NC}"
