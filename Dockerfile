@@ -5,7 +5,7 @@ FROM node:18
 WORKDIR /app
 
 # Kopieer alleen package.json & package-lock.json voor snellere cache
-COPY package*.json ./
+COPY package*.json tsconfig*.json vite.config.ts ./
 
 # Installeer dependencies
 RUN npm install
