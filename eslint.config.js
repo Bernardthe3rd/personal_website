@@ -2,6 +2,9 @@ import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import tseslint from 'typescript-eslint'
+import prettier from 'eslint-config-prettier'
+
 
 export default [
   { ignores: ['dist'] },
@@ -29,5 +32,29 @@ export default [
         { allowConstantExport: true },
       ],
     },
+  },
+  // TypeScript/TSX
+  {
+    files: ['**/*.{ts,tsx}'],
+    languageOptions: {
+      parser: tseslint.parser,
+      parserOptions: {
+        sourceType: 'module',
+        ecmaVersion: 2020,
+        project: './tsconfig.json',
+        ecmaFeatures: {jsx: true},
+      },
+    },
+    plugins: {
+      '@typescript-eslint': tseslint.plugin,
+    },
+    rules: {
+      ...tseslint.configs.recommended.rules,
+      'no-unused-vars': 'off', // Laat TS deze check doen
+      '@typescript-eslint/no-unused-vars': ['error'],
+    },
+    configs: [
+      prettier, // Voorkomt conflicten tussen ESLint en Prettier
+    ]
   },
 ]
