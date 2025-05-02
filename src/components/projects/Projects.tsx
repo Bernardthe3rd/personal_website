@@ -20,6 +20,7 @@ const Projects = () => {
         <Link to="contact" smooth={true} duration={500}>
           <ArrowBendRightDown size={48} />
         </Link>
+        <button onClick={handleProjects}>Show projects</button>
       </div>
     </Element>
   ) : (

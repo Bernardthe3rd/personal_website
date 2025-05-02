@@ -1,61 +1,61 @@
 .element__projects {
-    border-block: 5px solid var(--text-clr);
-    padding: 2rem 0;
-    min-height: 100dvh;
+  border-block: 5px solid var(--text-clr);
+  padding: 2rem 0;
+  min-height: 100dvh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
 }
 
 .element__projects-container {
-    background-color: var(--background-clr-first);
-    padding-inline: 2rem;
+  background-color: var(--background-clr-first);
+  padding-inline: 2rem;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-    gap: 25px;
+  gap: 25px;
 }
 
 .element__projects-container-alt {
-    border-block: 5px solid var(--text-clr);
-    background-color: var(--background-clr-first);
-    padding-inline: 2rem;
-    min-height: 100dvh;
+  border-block: 5px solid var(--text-clr);
+  background-color: var(--background-clr-first);
+  padding-inline: 2rem;
+  min-height: 100dvh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .element__projects--article {
-    border-radius: 20px;
-    background-color: var(--background-clr-second);
-    padding: 2rem 1rem;
-    max-width: 300px;
-    min-height: 500px;
+  border-radius: 20px;
+  background-color: var(--background-clr-second);
+  padding: 2rem 1rem;
+  max-width: 300px;
+  min-height: 500px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  row-gap: 20px;
 }
 
 .img-wrapper__projects {
-    width: 100%;
-    aspect-ratio: 5/4;
-    overflow: hidden;
-    border-radius: 20px;
+  width: 100%;
+  aspect-ratio: 5/4;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .container h2 {
-    text-align: center;
+  text-align: center;
 }

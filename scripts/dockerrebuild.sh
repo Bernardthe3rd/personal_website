@@ -19,7 +19,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo -e "${GREEN}🚀 Container starten op poort $PORT...${NC}"
-docker run -d -p $PORT:$PORT \
+docker run -p $PORT:$PORT \
   -v ${PWD}:/app \
   -v /app/node_modules \
   --name personal-site-container \

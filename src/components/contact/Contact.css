@@ -1,65 +1,65 @@
 .element__contact {
-    border-radius: 20px;
-    background-color: var(--background-clr-second);
-    min-height: 100dvh;
-    padding: 2rem 2rem;
-    margin: 2rem auto;
-    max-width: 1250px;
-    width: calc(100% - 4rem);
+  border-radius: 20px;
+  background-color: var(--background-clr-second);
+  min-height: 100dvh;
+  padding: 2rem 2rem;
+  margin: 2rem auto;
+  max-width: 1250px;
+  width: calc(100% - 4rem);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
 }
 
 .element__contact--form {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
 }
 
 input {
-    background-color: var(--background-clr-third);
-    border: none;
-    border-radius: 20px;
-    padding: 25px;
-    width: 100%;
-    max-width: 750px;
-    font-size: 24px;
-    font-weight: bold;
+  background-color: var(--background-clr-third);
+  border: none;
+  border-radius: 20px;
+  padding: 25px;
+  width: 100%;
+  max-width: 750px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 textarea {
-    background-color: var(--background-clr-third);
-    border: none;
-    border-radius: 20px;
-    padding: 25px;
-    width: 100%;
-    max-width: 750px;
-    font-size: 24px;
-    font-weight: bold;
+  background-color: var(--background-clr-third);
+  border: none;
+  border-radius: 20px;
+  padding: 25px;
+  width: 100%;
+  max-width: 750px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 button {
-    background-color: var(--background-clr-third);
-    border: none;
-    border-radius: 20px;
-    padding: 25px;
-    width: 100%;
-    max-width: 500px;
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--text-clr);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: var(--background-clr-third);
+  border: none;
+  border-radius: 20px;
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-clr);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: var(--detail-clr);
+  background-color: var(--detail-clr);
 }
