@@ -5,13 +5,16 @@ FROM node:18
 WORKDIR /app
 
 # Kopieer alleen package.json & package-lock.json voor snellere cache
-COPY package*.json ./
+COPY package*.json tsconfig*.json vite.config.ts ./
 
 # Installeer dependencies
 RUN npm install
 
 # Kopieer de rest van je project
 COPY . .
+
+# Format en lint code tijdens build
+RUN npm run format && npm run lint
 
 # Expose de Vite dev server poort
 EXPOSE 3000

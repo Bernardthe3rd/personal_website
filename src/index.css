@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
 /*///////////Global styling//////////////*/
 * {
@@ -8,11 +8,11 @@
 }
 
 :root {
-  --background-clr-first: #F5FBEF;
-  --background-clr-second: #92AD94;
-  --background-clr-third: #748B75;
-  --text-clr:#503D42;
-  --detail-clr: #84C318;
+  --background-clr-first: #f5fbef;
+  --background-clr-second: #92ad94;
+  --background-clr-third: #748b75;
+  --text-clr: #503d42;
+  --detail-clr: #84c318;
   --font-first: "Montserrat", sans-serif;
 }
 
@@ -72,7 +72,9 @@ h3 {
   line-height: 1.2em;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-family: var(--font-first);
   font-weight: 400;
   font-style: normal;
@@ -93,7 +95,9 @@ h4, h5, h6 {
     font-size: 24px;
   }
 
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     font-size: 18px;
   }
 
@@ -112,7 +116,9 @@ h4, h5, h6 {
   h3 {
     font-size: 18px;
   }
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     font-size: 14px;
   }
 }
