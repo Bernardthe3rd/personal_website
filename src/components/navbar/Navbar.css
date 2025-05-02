@@ -15,7 +15,71 @@
   padding: 2rem;
 }
 
+.nav__small {
+  display: none;
+}
+
 nav a {
   font-size: 24px;
   text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .nav__big {
+    display: none;
+    background: none;
+  }
+
+  .nav__small {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-clr-first);
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav__small.menu-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    opacity: 1;
+    justify-content: space-evenly;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 1000;
+    background: none;
+    border: none;
+    transition: transform 0.3s ease;
+  }
+
+  .nav__small a {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav__small.menu-open a {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

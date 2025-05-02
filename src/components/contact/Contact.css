@@ -46,7 +46,7 @@ textarea {
   font-weight: bold;
 }
 
-button {
+.button__contact {
   background-color: var(--background-clr-third);
   border: none;
   border-radius: 20px;
